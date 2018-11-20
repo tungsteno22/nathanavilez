@@ -2,16 +2,11 @@ import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
-import {
-  faStroopwafel,
-  faEnvelope,
-  faMobile,
-  faMobileAlt,
-} from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 
 import './App.css';
 
-library.add(faStroopwafel, fab, faEnvelope, faMobileAlt);
+library.add(fab, faEnvelope, faMobileAlt);
 
 class App extends Component {
   render() {
