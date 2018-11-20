@@ -17,19 +17,39 @@ class App extends Component {
             <h1>Nathan Avilez</h1>
             <h3>Software Engineer</h3>
             <div id="contact">
-              <a href="https://www.linkedin.com/in/nathanavilez/">
+              <a
+                href="https://www.linkedin.com/in/nathanavilez/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={['fab', 'linkedin']} />
               </a>{' '}
-              <a href="https://github.com/tungsteno22">
+              <a
+                href="https://github.com/tungsteno22"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={['fab', 'github']} />
               </a>{' '}
-              <a href="https://medium.com/@tungsteno22">
+              <a
+                href="https://medium.com/@tungsteno22"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={['fab', 'medium']} />
               </a>{' '}
-              <a href="mailto:tungsteno22@gmail.com">
+              <a
+                href="mailto:tungsteno22@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faEnvelope} />
               </a>{' '}
-              <a href="tel:+13109935831">
+              <a
+                href="tel:+13109935831"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FontAwesomeIcon icon={faMobileAlt} />
               </a>
             </div>
