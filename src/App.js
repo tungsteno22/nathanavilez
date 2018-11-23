@@ -1,12 +1,35 @@
 import React, { Component } from 'react';
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { fab } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+import MediaLink from './MediaLink';
 
 import './App.css';
 
 library.add(fab, faEnvelope, faMobileAlt);
+
+const mediaLinks = [
+  {
+    href: 'https://www.linkedin.com/in/nathanavilez/',
+    icon: ['fab', 'linkedin'],
+  },
+  {
+    href: 'https://github.com/tungsteno22',
+    icon: ['fab', 'github'],
+  },
+  {
+    href: 'https://medium.com/@tungsteno22',
+    icon: ['fab', 'medium'],
+  },
+  {
+    href: 'mailto:tungsteno22@gmail.com',
+    icon: faEnvelope,
+  },
+  {
+    href: 'tel:+13109935831',
+    icon: faMobileAlt,
+  },
+];
 
 class App extends Component {
   render() {
@@ -17,41 +40,9 @@ class App extends Component {
             <h1>Nathan Avilez</h1>
             <h3>Software Engineer</h3>
             <div id="contact">
-              <a
-                href="https://www.linkedin.com/in/nathanavilez/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={['fab', 'linkedin']} />
-              </a>{' '}
-              <a
-                href="https://github.com/tungsteno22"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={['fab', 'github']} />
-              </a>{' '}
-              <a
-                href="https://medium.com/@tungsteno22"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={['fab', 'medium']} />
-              </a>{' '}
-              <a
-                href="mailto:tungsteno22@gmail.com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faEnvelope} />
-              </a>{' '}
-              <a
-                href="tel:+13109935831"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <FontAwesomeIcon icon={faMobileAlt} />
-              </a>
+              {mediaLinks.map(mediaLink => (
+                <MediaLink {...mediaLink} />
+              ))}
             </div>
           </div>
         </header>
