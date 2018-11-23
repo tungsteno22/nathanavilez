@@ -22,6 +22,10 @@ const mediaLinks = [
     icon: ['fab', 'medium'],
   },
   {
+    href: 'https://angel.co/nathan-avilez',
+    icon: ['fab', 'angellist'],
+  },
+  {
     href: 'mailto:tungsteno22@gmail.com',
     icon: faEnvelope,
   },
