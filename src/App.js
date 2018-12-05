@@ -1,13 +1,8 @@
 import React, { Component } from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { faEnvelope, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
 import MediaLink from './MediaLink';
 import { mediaLinks } from './constants';
 
 import './App.css';
-
-library.add(fab, faEnvelope, faMobileAlt);
 
 class App extends Component {
   render() {
