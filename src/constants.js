@@ -18,7 +18,7 @@ export const mediaLinks = [
     icon: ['fab', 'medium'],
   },
   {
-    href: 'https://stackoverflow.com/users/story/10746412',
+    href: 'https://stackoverflow.com/story/nathanavilez',
     icon: ['fab', 'stack-overflow'],
   },
   {
