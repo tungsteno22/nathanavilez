@@ -29,8 +29,4 @@ export const mediaLinks = [
     href: 'mailto:tungsteno22@gmail.com',
     icon: faEnvelope,
   },
-  {
-    href: 'tel:+13109935831',
-    icon: faMobileAlt,
-  },
 ];
