@@ -14,7 +14,7 @@ class App extends Component {
             <h3>Software Engineer</h3>
             <div id="contact">
               {mediaLinks.map(mediaLink => (
-                <MediaLink {...mediaLink} />
+                <MediaLink key={mediaLink.id} {...mediaLink} />
               ))}
             </div>
           </div>
